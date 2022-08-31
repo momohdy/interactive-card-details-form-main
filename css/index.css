@@ -1,0 +1,172 @@
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Light-grayish-violet: hsl(270, 3%, 87%);
+    --Dark-grayish-violet: hsl(279, 6%, 55%);
+    --Very-dark-violet: hsl(278, 68%, 11%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bebas Neue', cursive;  /* this type make any text to uppercase */
+}
+
+/* .row {
+    height: inherit;
+    
+} */
+
+/* start left */
+
+.row .left {
+    overflow: hidden;
+}
+.row .left svg{
+    position: absolute;
+    top: 22%;
+    left: 43%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    color: #fff;
+}
+.row .left .textOnCard{
+    padding: 30px;
+    color: var(--Light-grayish-violet);
+    font-weight: bold;
+    position: absolute;
+    width: 300px;
+    top: 30%;
+    left: 65%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+}
+
+.row .left .textOnCard .two{
+    float: right;
+}
+img.front{
+    position: absolute;
+    top: 40%;
+    left: 23%;
+    transform: translate(-50%,-50%);
+}
+img.front,
+img.back{
+    width: 300px;
+    z-index: 5;
+}
+img.back{
+    position: absolute;
+    top: 100%;
+    left: 32%;
+    transform: translate(-50%,-50%);
+}
+
+/* End left */
+
+
+
+/* start right */
+
+.row .right .form{
+    padding: 200px;
+}
+
+.row .right .name  {
+    /* font-weight: bold; */
+    color: var(--Very-dark-violet);
+}
+
+.row .right .name input {
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    border-color: #6f42c1;
+    border-top: 2px solid #6f42c1;
+    border-left: 2px solid #6f42c1;
+    color: var(--Very-dark-violet);
+    background-color: transparent;
+    box-shadow: #6f42c1;
+}
+.TheFieldIsRequired.active{
+    display: block;
+    color: #dc3545;
+    font-size: 12px;
+    letter-spacing: .2rem;
+}
+.TheFieldIsRequired,
+.TheFieldIsRequired.notActive{
+    display: none;
+}
+
+.row .right .number {
+    margin-top: 40px;
+
+}
+
+.row .right .number input {
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    border-color: #6f42c1;
+    border-top: 2px solid #6f42c1;
+    border-left: 2px solid #6f42c1;
+    color: var(--Very-dark-violet);
+    background-color: transparent;
+    box-shadow: #6f42c1;
+}
+.row .right .date input {
+    border-radius: 6px;
+    cursor: pointer;
+    border-color: #6f42c1;
+    border-top: 2px solid #6f42c1;
+    border-left: 2px solid #6f42c1;
+    color: var(--Very-dark-violet);
+    background-color: transparent;
+    box-shadow: #6f42c1;
+}
+
+.row .right .date input.day {
+    width: 15%;
+    margin-right: 5px;
+}
+
+.row .right .date input.month {
+    width: 60%;
+    margin-right: 5px;
+
+}
+
+.row .right .date input.cvc {
+    width: 15%;
+    margin-right: 5px;
+    
+}
+.row .right a{
+    background-color: var(--Very-dark-violet);
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.wrongPattern,
+.wrongPattern.notValidPattern{
+    display: none;
+}
+.wrongPattern.validPattern{
+    display: block;
+    color: #dc3545;
+    font-size: 12px;
+    letter-spacing: .2rem;
+
+}
+
+
+/* .row .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+/* End right */

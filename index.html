@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@400;700&family=Roboto+Slab:wght@700&family=Roboto:wght@100;300&family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Interactive card details form</title>
+  </head>
+  <body>
+    <div class="row">
+      <div class="left col-4 position-relative">
+        <img src="/images/bg-main-desktop.png" alt="image" />
+        <i class="fa-solid fa-circle fa-2x"></i>
+        <div class="textOnCard">
+          <h2 class="text-center mb-4 ms-4 "></h2>
+          <h6 class="userNameOnCard ms-4 d-inline mb-5"></h6>
+          <h6 class="d-inline two text-center">00</h6>
+        </div>
+        <h4 class="numberOnCard"></h4>
+      </div>
+      <div class="right col-8 d-flex justify-content-center align-items-center">
+        <div class="form">
+          <div class="name">
+            <h6 class="mb-2">Cardholder Name</h6>
+            <input type="text" class="p-2" />
+            <h6 class="TheFieldIsRequired mb-3 mt-2">The field is required</h6>
+          </div>
+          <div class="number mb-5">
+            <h6 class="mb-2">Card Number</h6>
+            <input type="text" class="p-2" />
+            <h6 class="wrongPattern mb-2 mt-2">Wrong format , numbers only</h6>
+          </div>
+          <div class="date mb-5">
+            <h6 class="mb-2">Exp. Date (MM/YY)</h6>
+            <input type="text" class="p-2 day d-inline" />
+            <input type="text" class="p-2 month d-inline" />
+            <input type="text" class="p-2 cvc d-inline" />
+          </div>
+          <h6 class="blank mb-2 mt-2">Can’t be Blank</h6>
+          <a class="btn btn-primary" href="#" role="button">Confirm</a>
+        </div>
+      </div>
+      <img src="images/bg-card-front.png" alt="" class="front" />
+      <img src="images/bg-card-back.png" alt="" class="back" />
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
+
+<!-- 0000 0000 0000 0000
+  Jane Appleseed
+  00/00
+
+  000
+
+  Cardholder Name
+  e.g. Jane Appleseed
+
+  Card Number
+  e.g. 1234 5678 9123 0000
+
+  Exp. Date (MM/YY)
+  MM
+  YY
+
+  CVC
+  e.g. 123
+
+  Confirm -->
+
+<!-- Completed state start -->
+
+<!-- Thank you!
+  We've added your card details
+  Continue -->
