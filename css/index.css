@@ -26,7 +26,7 @@ body {
 .row .left svg{
     position: absolute;
     top: 22%;
-    left: 43%;
+    left: 54%;
     transform: translate(-50%,-50%);
     z-index: 10;
     color: #fff;
@@ -36,20 +36,25 @@ body {
     color: var(--Light-grayish-violet);
     font-weight: bold;
     position: absolute;
-    width: 300px;
+    width: 360px;
     top: 30%;
-    left: 65%;
+    left: 75%;
     transform: translate(-50%,-50%);
     z-index: 10;
 }
+.row .left .textOnCard h2{
+    margin-left: 40px;
+}
 
 .row .left .textOnCard .two{
-    float: right;
+    text-align: center;
+    margin-left: 195px;
+    margin-top: 50px;
 }
 img.front{
     position: absolute;
     top: 40%;
-    left: 23%;
+    left: 25%;
     transform: translate(-50%,-50%);
 }
 img.front,
@@ -59,7 +64,7 @@ img.back{
 }
 img.back{
     position: absolute;
-    top: 100%;
+    top: 70%;
     left: 32%;
     transform: translate(-50%,-50%);
 }
